@@ -46,7 +46,7 @@ function stopWatch (){
 }
 startStopBtn.addEventListener('click', function(){
     if (timeStatus=== "stopped"){
-      timeInterval=  window.setInterval(stopWatch ,1);
+      timeInterval=  window.setInterval(stopWatch ,1000);
       document.getElementById('startStopBtn').innerHTML = `<i class="fa-solid fa-pause" id="pause"></i>`;
       timeStatus= 'started';
     }
